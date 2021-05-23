@@ -1,5 +1,7 @@
 FROM python:3.8-alpine
 
+RUN apk --update add --no-cache g++
+
 RUN pip install \
   prefect[postgres,gcp] pg8000 \
   sqlalchemy sqlakeyset \
