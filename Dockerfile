@@ -1,6 +1,6 @@
 FROM python:3.8-alpine
 
-RUN apk --update add --no-cache g++
+RUN apk --update add --no-cache g++ git
 
 RUN pip install \
   prefect[postgres,gcp] pg8000 \
